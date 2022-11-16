@@ -13,7 +13,9 @@ public class Main {
             return;
         }
 
-        List<Artist> artists = datasource.queryArtists();
+        //List<Artist> artists = datasource.queryArtists(Datasource.ORDER_BY_NONE);
+        //ORDER_BY_ASC; ORDER_BY_DESC;
+        List<Artist> artists = datasource.queryArtists(5);
         if (artists == null) {
             System.out.println("No artists!");
             return;
